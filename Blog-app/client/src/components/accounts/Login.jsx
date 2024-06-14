@@ -21,7 +21,7 @@ export default function Login() {
         box-shadow: 5px 2px 5px 2px rgb(0 0 0 / 0.6);
     `;
     const Image = styled("img")`
-        width: 200px;
+        width: 200px; 
         display: flex;
         margin: auto;
         padding: 1px -1px 0px 90px;
