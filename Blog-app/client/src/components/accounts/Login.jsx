@@ -24,7 +24,7 @@ export default function Login() {
         width: 200px;
         display: flex;
         margin: auto;
-        padding: 1px 0px 0px 90px;
+        padding: 1px -1px 0px 90px;
     `;
     const Log = styled(Box)`
         padding: 0px 30px;
