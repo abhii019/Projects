@@ -2,6 +2,7 @@ import express from 'express';
 import cors from 'cors'; // Import CORS package
 import { Connection } from './database/db.js';
 import router from './routes/route.js';
+import bodyParser from 'body-parser';
 
 const app = express();
 const PORT = 8000;
@@ -21,7 +22,8 @@ app.use(cors({
 // Body parser middleware
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-
+app.use(bodyParser.json({ extended :true}));
+app.use(bodyParser.urlencoded({extended :true}))
 // Routes middleware
 app.use('/', router);
 
